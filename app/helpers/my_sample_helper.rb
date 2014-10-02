@@ -1,0 +1,2 @@
+module MySampleHelper
+end

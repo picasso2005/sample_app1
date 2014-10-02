@@ -1,0 +1,59 @@
+<% if params[:controller] == 'users' && params[:action] == 'show' %>
+  <header>
+    <div class ="navbar-inner">
+      <div class="container">
+        <%= link_to "CIS58" ,'/',id: "logo"%>
+
+        <nav class="navbar ">
+            <ul class ="nav nav-pills pull-right">
+              <li>
+                <p>Hello:</p>
+              </li>
+              <li>
+                <%= @user.firstname %>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <span class="glyphicon icon-list"></span>
+                  <span class="caret"></span>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">Action</a>
+                    </li>
+                    <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">Another action</a>
+                    </li>
+                    <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="#">Separated link</a>
+
+                    </li>
+                  </ul>
+                </div>        
+              </li>   
+            </ul>
+        </nav>
+      </div>  
+    </div>
+<% else %>
+  <header>
+    <div class="navbar-inner">
+      <div class="container"> 
+          <%= link_to "CIS58",'#',id: "logo" %>
+          <nav>
+            <ul class="nav nav-pills pull-left">
+              <li class="active" ><%= link_to "Home", '/'%></li>
+              <li class="active"><%= link_to "Help", '/help'%></li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="nav nav-pills pull-right">
+              <li class="active"><%= link_to "Sign In", '/signin'%></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </header>
+<% end %>

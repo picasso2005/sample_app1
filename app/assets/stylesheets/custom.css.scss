@@ -1,0 +1,96 @@
+@import "bootstrap";
+html {
+  overflow-y: scroll;
+}
+body{
+  padding-top :63px;
+  font-size: 18px;
+  background-color: rgb(235, 230, 230);
+
+}
+section {
+  overflow: auto;
+}
+textarea {
+  resize: vertical;
+}
+.center {
+  text-align: center;
+}
+.center h1 {
+  margin-bottom: 80px;
+}
+#logo{
+  float:left;
+  margin-left:-133px;
+}
+.navbar-inner{
+  height :60px;
+  margin-top:-63px;
+}
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: red;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+.inside{
+  background-color: #FAFAFA;
+  
+  margin-top: 0px;
+
+}
+.btn{
+  margin-right: 260px;
+
+}
+.row{
+  margin-top: 30px;
+  margin-left: 60px;
+}
+.user{
+  font-size: 10px;
+}
+.btn-large{
+  margin-left: 0px;
+}
+.btn-primary{
+  margin-left: 10px;
+}
+.container{
+  margin-top:20px;
+  li{
+    padding-right: 15px;
+  }
+
+  
+}
